@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Testing_suite">
+	<test name="RestAssured Test" preserve-order="true" parallel="false">
+		<classes>
+			<class name="com.udemy.statuses.TwitterWorkflowTest" />
+			<class name="com.udemy.statuses.UserTimelineTest" />
+		</classes>
+	</test>
+</suite>

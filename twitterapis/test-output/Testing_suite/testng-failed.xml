@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Testing_suite]">
+  <test thread-count="5" name="RestAssured Test(failed)">
+    <classes>
+      <class name="com.udemy.statuses.UserTimelineTest">
+        <methods>
+          <include name="readTweets"/>
+          <include name="readThreeLatestTweets"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.udemy.statuses.UserTimelineTest -->
+      <class name="com.udemy.statuses.TwitterWorkflowTest">
+        <methods>
+          <include name="setup"/>
+          <include name="postTweet"/>
+          <include name="deleteTweet"/>
+          <include name="readTweet"/>
+        </methods>
+      </class> <!-- com.udemy.statuses.TwitterWorkflowTest -->
+    </classes>
+  </test> <!-- RestAssured Test(failed) -->
+</suite> <!-- Failed suite [Testing_suite] -->
